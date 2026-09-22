@@ -5,6 +5,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initNavigation();
+  initCertificates();
   initContactForm();
 });
 
@@ -155,4 +156,105 @@ function initContactForm() {
       toast.classList.remove('active');
     }, 4500);
   }
+}
+
+/* ==========================================================================
+   4. Interactive Certificates Filter & Lightbox Modal
+   ========================================================================== */
+function initCertificates() {
+  const filterBtns = document.querySelectorAll('.cert-filter-btn');
+  const certCards = document.querySelectorAll('.cert-card');
+  const modal = document.getElementById('cert-lightbox-modal');
+  if (!modal) return;
+
+  const modalImg = document.getElementById('cert-modal-img');
+  const modalTitle = document.getElementById('cert-modal-title');
+  const modalIssuer = document.getElementById('cert-modal-issuer');
+  const modalDate = document.getElementById('cert-modal-date');
+  const modalVerifyBtn = document.getElementById('cert-modal-verify-btn');
+  const modalCloseBtn = document.getElementById('cert-modal-close');
+
+  // Filter Buttons
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+      certCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+          card.style.display = 'flex';
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, 10);
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(8px)';
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Modal Open Logic
+  function openModal(data) {
+    if (modalImg) modalImg.src = data.img;
+    if (modalTitle) modalTitle.textContent = data.title;
+    if (modalIssuer) modalIssuer.textContent = data.issuer;
+    if (modalDate) modalDate.textContent = data.date ? `Issued: ${data.date}` : '';
+
+    if (modalVerifyBtn) {
+      if (data.verify && data.verify !== '#') {
+        modalVerifyBtn.href = data.verify;
+        modalVerifyBtn.style.display = 'inline-flex';
+      } else {
+        modalVerifyBtn.style.display = 'none';
+      }
+    }
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // Bind Openers
+  document.querySelectorAll('[data-action="view-cert"]').forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      const card = trigger.closest('.cert-card');
+      if (!card) return;
+
+      const data = {
+        img: card.getAttribute('data-img'),
+        title: card.getAttribute('data-title'),
+        issuer: card.getAttribute('data-issuer'),
+        date: card.getAttribute('data-date'),
+        verify: card.getAttribute('data-verify')
+      };
+      openModal(data);
+    });
+  });
+
+  // Close Events
+  if (modalCloseBtn) {
+    modalCloseBtn.addEventListener('click', closeModal);
+  }
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
 }

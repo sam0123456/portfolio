@@ -121,6 +121,22 @@
     grid-template-columns: 1fr;
   }
 
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-filters {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cert-filter-btn {
+    white-space: nowrap;
+  }
+
   .footer-inner {
     flex-direction: column;
     text-align: center;
@@ -161,5 +177,13 @@
 
   .modal-content {
     padding: 24px 18px;
+  }
+
+  .cert-modal-dialog {
+    margin: 8px;
+  }
+
+  .cert-modal-image {
+    max-height: 50vh;
   }
 }
