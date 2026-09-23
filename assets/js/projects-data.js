@@ -18,7 +18,7 @@ const portfolioProjects = [
     ],
     tags: ["MERN Stack", "React.js", "Node.js", "Express.js", "MongoDB", "Geospatial", "Socket.io"],
     githubUrl: "https://github.com/sam0123456/shiftpe_onlinejob",
-    liveUrl: "https://github.com/sam0123456/shiftpe_onlinejob",
+    liveUrl: "https://sam0123456.github.io/shiftpe_onlinejob/",
     accentColor: "#6366f1",
     icon: "briefcase"
   },
@@ -37,7 +37,7 @@ const portfolioProjects = [
     ],
     tags: ["React.js", "Node.js", "Express.js", "MongoDB", "RBAC", "REST API"],
     githubUrl: "https://github.com/sam0123456/hostel-complaint-box",
-    liveUrl: "https://github.com/sam0123456/hostel-complaint-box",
+    liveUrl: "https://sam0123456.github.io/hostel-complaint-box/",
     accentColor: "#10b981",
     icon: "shield"
   },
