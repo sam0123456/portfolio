@@ -76,6 +76,44 @@ const portfolioProjects = [
     liveUrl: "https://github.com/sam0123456",
     accentColor: "#a855f7",
     icon: "cpu"
+  },
+  {
+    id: "crescent-national-academy",
+    title: "Crescent National Academy — Institutional Web Portal",
+    category: "frontend",
+    tagline: "Official institutional web portal with online admission enquiries, academic curriculum showcase, and mobile-first architecture",
+    description: "Designed and deployed a responsive institutional web platform for Crescent National Academy (Co-Ed., CBSE Curriculum from Pre-Nur. to Class Xth) in Patna. Delivers an accessible digital presence for parents and students with curriculum details, facility highlights, and dynamic admissions intake.",
+    architecture: "Lightweight zero-dependency architecture using semantic HTML5, modern CSS Grid/Flexbox layouts, Google Fonts (Outfit & Plus Jakarta Sans), and FontAwesome icons.",
+    keyMetrics: [
+      "Responsive grid and flexbox layout optimized for all device sizes",
+      "Interactive admission enquiry workflows and direct telephone hooks",
+      "Full institutional information hierarchy with curriculum and facility details",
+      "Fast sub-second load times without frontend framework overhead"
+    ],
+    tags: ["HTML5", "CSS3", "JavaScript", "Responsive UI", "Flexbox & Grid", "Performance"],
+    githubUrl: "https://github.com/sam0123456/crescent-national-academy",
+    liveUrl: "https://sam0123456.github.io/crescent-national-academy/",
+    accentColor: "#f59e0b",
+    icon: "globe"
+  },
+  {
+    id: "resonance-school",
+    title: "Resonance Public School — Educational Web Platform",
+    category: "frontend",
+    tagline: "Modern school web portal featuring instant WhatsApp lead integration, celebration animations, and clean UI",
+    description: "Engineered an interactive web platform for Resonance Public School (Phulwari Sharif, Patna) to strengthen campus outreach and streamline admissions enquiries. Incorporates direct WhatsApp click-to-chat messaging, interactive fee and admission highlights, and smooth mobile navigation.",
+    architecture: "Built with HTML5, CSS3, JavaScript, WhatsApp Click-to-Chat API integration, and Canvas Confetti animations for celebration effects.",
+    keyMetrics: [
+      "Automated WhatsApp click-to-chat enquiry for real-time admissions consultation",
+      "Canvas Confetti celebratory interactions and smooth transitions",
+      "Showcase for registration credentials (PAT/RTE/PVT.SCH/895) and CBSE curriculum",
+      "Mobile-optimized drawer navigation and responsive layout"
+    ],
+    tags: ["HTML5", "CSS3", "JavaScript", "WhatsApp API", "Canvas Confetti", "UI/UX"],
+    githubUrl: "https://github.com/sam0123456/resonance-school",
+    liveUrl: "https://sam0123456.github.io/resonance-school/",
+    accentColor: "#3b82f6",
+    icon: "globe"
   }
 ];
 

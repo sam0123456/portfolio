@@ -32,7 +32,7 @@ MCA student with hands-on experience in MERN Stack development. Proficient in HT
 <span class="term-accent">❯ Languages:</span> C++, Python, JavaScript
 <span class="term-accent">❯ Frontend:</span> HTML5, CSS3, React.js
 <span class="term-accent">❯ Backend:</span> Node.js, Express.js, REST APIs, WebSockets
-<span class="term-accent">❯ Database:</span> MongoDB (Mongoose, Geospatial Search)
+<span class="term-accent">❯ Database:</span> MongoDB (Mongoose, Geospatial Search), PostgreSQL
 <span class="term-accent">❯ Concepts:</span> Object-Oriented Programming (OOP), Data Structures & Algorithms
 <span class="term-accent">❯ AI/ML:</span> Neural Networks, Generative AI Foundations
 `,
@@ -44,7 +44,11 @@ MCA student with hands-on experience in MERN Stack development. Proficient in HT
   2. <span class="term-cmd">Hostel/PG Complaint System</span> (MERN Stack)
      • Role-based login (Student vs Warden), complaint lifecycle, soft-delete.
      • GitHub: github.com/sam0123456/hostel-complaint-box
-  3. <span class="term-cmd">AlgoForge (C++)</span> - Core DSA & Competitive Problem Solving
+  3. <span class="term-cmd">Crescent National Academy</span> - Institutional Web Portal
+     • Live: sam0123456.github.io/crescent-national-academy/
+  4. <span class="term-cmd">Resonance Public School</span> - Educational Web Platform
+     • Live: sam0123456.github.io/resonance-school/
+  5. <span class="term-cmd">AlgoForge (C++)</span> - Core DSA & Competitive Problem Solving
 `,
     education: `
 <span class="term-success">❯ Academic Qualifications:</span>
