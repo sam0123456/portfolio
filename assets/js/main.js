@@ -174,6 +174,24 @@ function initCertificates() {
   const modalVerifyBtn = document.getElementById('cert-modal-verify-btn');
   const modalCloseBtn = document.getElementById('cert-modal-close');
 
+  // Filter Logic
+  function applyFilter(filter) {
+    certCards.forEach(card => {
+      const category = card.getAttribute('data-category');
+      if (filter === 'all' || category === filter) {
+        card.style.display = 'flex';
+        setTimeout(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, 10);
+      } else {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(8px)';
+        card.style.display = 'none';
+      }
+    });
+  }
+
   // Filter Buttons
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -181,22 +199,15 @@ function initCertificates() {
       btn.classList.add('active');
 
       const filter = btn.getAttribute('data-filter');
-      certCards.forEach(card => {
-        const category = card.getAttribute('data-category');
-        if (filter === 'all' || category === filter) {
-          card.style.display = 'flex';
-          setTimeout(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-          }, 10);
-        } else {
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(8px)';
-          card.style.display = 'none';
-        }
-      });
+      applyFilter(filter);
     });
   });
+
+  // Apply initial active filter on load (Cloud & DevOps)
+  const defaultActiveBtn = document.querySelector('.cert-filter-btn.active') || document.querySelector('.cert-filter-btn[data-filter="cloud"]');
+  if (defaultActiveBtn) {
+    applyFilter(defaultActiveBtn.getAttribute('data-filter'));
+  }
 
   // Modal Open Logic
   function openModal(data) {
