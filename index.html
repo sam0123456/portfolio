@@ -411,10 +411,6 @@
 
         <!-- Filter Controls -->
         <div class="cert-filters">
-          <button class="cert-filter-btn active" data-filter="all">
-            <span>All Credentials</span>
-            <span class="cert-filter-count">12</span>
-          </button>
           <button class="cert-filter-btn" data-filter="cloud">
             <span>Cloud &amp; DevOps</span>
             <span class="cert-filter-count">2</span>
@@ -431,11 +427,16 @@
             <span>Cybersecurity &amp; Networks</span>
             <span class="cert-filter-count">3</span>
           </button>
+          <button class="cert-filter-btn active" data-filter="all">
+            <span>All Credentials</span>
+            <span class="cert-filter-count">12</span>
+          </button>
         </div>
 
         <!-- Certificates Grid -->
         <div class="cert-grid" id="cert-cards-container">
 
+          <!-- ================= Cloud & DevOps ================= -->
           <!-- 1. AWS Cloud Foundations -->
           <div class="cert-card" data-category="cloud" data-img="assets/images/certificates/aws_cloud_foundations.png" data-title="AWS Academy Graduate — AWS Academy Cloud Foundations" data-issuer="AWS Academy" data-date="07/03/2025" data-verify="https://www.credly.com/go/OA8ymd2u">
             <div class="cert-preview-frame" data-action="view-cert">
@@ -469,130 +470,7 @@
             </div>
           </div>
 
-          <!-- 2. Oracle AI Foundations -->
-          <div class="cert-card" data-category="ai" data-img="assets/images/certificates/oracle_certificate.png" data-title="Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate" data-issuer="Oracle University" data-date="10/07/2025" data-verify="#">
-            <div class="cert-preview-frame" data-action="view-cert">
-              <img src="assets/images/certificates/oracle_certificate.png" alt="Oracle Certified AI Foundations Associate" class="cert-img" loading="lazy">
-              <div class="cert-preview-overlay">
-                <span class="cert-zoom-pill">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                  <span>Click to Enlarge</span>
-                </span>
-              </div>
-            </div>
-            <div class="cert-body">
-              <div class="cert-header-meta">
-                <span class="cert-issuer-badge oracle">Oracle</span>
-                <span class="cert-date">Oct 2025</span>
-              </div>
-              <h3 class="cert-name">OCI 2025 Certified AI Foundations Associate</h3>
-              <p class="cert-description">
-                Official Oracle certification in AI &amp; Machine Learning principles, neural networks, LLMs, and Generative AI services on Oracle Cloud Infrastructure.
-              </p>
-              <div class="cert-card-footer">
-                <button type="button" class="cert-view-btn" data-action="view-cert">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  <span>Inspect</span>
-                </button>
-                <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-muted);">ID: 102856875OCI25</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- 3. IBM Web Development Fundamentals -->
-          <div class="cert-card" data-category="web" data-img="assets/images/certificates/ibm_web_development.png" data-title="IBM SkillsBuild — Web Development Fundamentals" data-issuer="IBM SkillsBuild" data-date="08/25/2025" data-verify="https://www.credly.com/badges/ce37d226-ae14-49b3-96d9-5df49e26f661">
-            <div class="cert-preview-frame" data-action="view-cert">
-              <img src="assets/images/certificates/ibm_web_development.png" alt="IBM Web Development Fundamentals Certificate" class="cert-img" loading="lazy">
-              <div class="cert-preview-overlay">
-                <span class="cert-zoom-pill">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                  <span>Click to Enlarge</span>
-                </span>
-              </div>
-            </div>
-            <div class="cert-body">
-              <div class="cert-header-meta">
-                <span class="cert-issuer-badge ibm">IBM SkillsBuild</span>
-                <span class="cert-date">Aug 2025</span>
-              </div>
-              <h3 class="cert-name">Web Development Fundamentals</h3>
-              <p class="cert-description">
-                Hands-on validation in modern frontend development, semantic HTML5, CSS layout mechanics, responsive design, and JavaScript DOM interaction.
-              </p>
-              <div class="cert-card-footer">
-                <button type="button" class="cert-view-btn" data-action="view-cert">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  <span>Inspect</span>
-                </button>
-                <a href="https://www.credly.com/badges/ce37d226-ae14-49b3-96d9-5df49e26f661" target="_blank" rel="noopener" class="cert-verify-link">
-                  <span>Credly Badge</span>
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 4. Cisco Networking Essentials -->
-          <div class="cert-card" data-category="security" data-img="assets/images/certificates/cisco_network_technician.png" data-title="Cisco Networking Academy — Networking Essentials" data-issuer="Cisco Networking Academy & LNCT Group" data-date="14 Dec 2024" data-verify="#">
-            <div class="cert-preview-frame" data-action="view-cert">
-              <img src="assets/images/certificates/cisco_network_technician.png" alt="Cisco Networking Essentials Certificate" class="cert-img" loading="lazy">
-              <div class="cert-preview-overlay">
-                <span class="cert-zoom-pill">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                  <span>Click to Enlarge</span>
-                </span>
-              </div>
-            </div>
-            <div class="cert-body">
-              <div class="cert-header-meta">
-                <span class="cert-issuer-badge cisco">Cisco Academy</span>
-                <span class="cert-date">Dec 2024</span>
-              </div>
-              <h3 class="cert-name">Networking Essentials</h3>
-              <p class="cert-description">
-                Practical mastery of network communications, IPv4/IPv6 address architectures, subnet calculations, switch and router operation, and diagnostics.
-              </p>
-              <div class="cert-card-footer">
-                <button type="button" class="cert-view-btn" data-action="view-cert">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  <span>Inspect</span>
-                </button>
-                <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-muted);">LNCT Academy</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- 5. Cisco CyberOps Associate -->
-          <div class="cert-card" data-category="security" data-img="assets/images/certificates/cisco_cyberops_associate.png" data-title="Cisco Networking Academy — CyberOps Associate" data-issuer="Cisco Networking Academy & LNCT Group" data-date="24 Feb 2025" data-verify="#">
-            <div class="cert-preview-frame" data-action="view-cert">
-              <img src="assets/images/certificates/cisco_cyberops_associate.png" alt="Cisco CyberOps Associate Certificate" class="cert-img" loading="lazy">
-              <div class="cert-preview-overlay">
-                <span class="cert-zoom-pill">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                  <span>Click to Enlarge</span>
-                </span>
-              </div>
-            </div>
-            <div class="cert-body">
-              <div class="cert-header-meta">
-                <span class="cert-issuer-badge cisco">Cisco Academy</span>
-                <span class="cert-date">Feb 2025</span>
-              </div>
-              <h3 class="cert-name">CyberOps Associate</h3>
-              <p class="cert-description">
-                Security Operations Center (SOC) procedures, real-time threat monitoring, endpoint incident handling, malware payload detection, and defense telemetry.
-              </p>
-              <div class="cert-card-footer">
-                <button type="button" class="cert-view-btn" data-action="view-cert">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  <span>Inspect</span>
-                </button>
-                <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-muted);">LNCT Academy</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- 6. Salesforce Developer & Agentblazer -->
+          <!-- 2. Salesforce Developer & Agentblazer -->
           <div class="cert-card" data-category="cloud" data-img="assets/images/certificates/salesforce_certificate.png" data-title="Salesforce Developer With Agentblazer Champion Program" data-issuer="SmartBridge & AICTE (Salesforce Partner)" data-date="July 31, 2025" data-verify="#">
             <div class="cert-preview-frame" data-action="view-cert">
               <img src="assets/images/certificates/salesforce_certificate.png" alt="Salesforce Developer Certificate" class="cert-img" loading="lazy">
@@ -622,7 +500,38 @@
             </div>
           </div>
 
-          <!-- 7. Infosys Principles of Generative AI -->
+          <!-- ================= AI & Data Science ================= -->
+          <!-- 3. Oracle AI Foundations -->
+          <div class="cert-card" data-category="ai" data-img="assets/images/certificates/oracle_certificate.png" data-title="Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate" data-issuer="Oracle University" data-date="10/07/2025" data-verify="#">
+            <div class="cert-preview-frame" data-action="view-cert">
+              <img src="assets/images/certificates/oracle_certificate.png" alt="Oracle Certified AI Foundations Associate" class="cert-img" loading="lazy">
+              <div class="cert-preview-overlay">
+                <span class="cert-zoom-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  <span>Click to Enlarge</span>
+                </span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-header-meta">
+                <span class="cert-issuer-badge oracle">Oracle</span>
+                <span class="cert-date">Oct 2025</span>
+              </div>
+              <h3 class="cert-name">OCI 2025 Certified AI Foundations Associate</h3>
+              <p class="cert-description">
+                Official Oracle certification in AI &amp; Machine Learning principles, neural networks, LLMs, and Generative AI services on Oracle Cloud Infrastructure.
+              </p>
+              <div class="cert-card-footer">
+                <button type="button" class="cert-view-btn" data-action="view-cert">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <span>Inspect</span>
+                </button>
+                <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-muted);">ID: 102856875OCI25</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Infosys Principles of Generative AI -->
           <div class="cert-card" data-category="ai" data-img="assets/images/certificates/infosys_generative_ai.png" data-title="Principles of Generative AI Certification" data-issuer="Infosys Springboard" data-date="June 30, 2025" data-verify="https://verify.onwingspan.com">
             <div class="cert-preview-frame" data-action="view-cert">
               <img src="assets/images/certificates/infosys_generative_ai.png" alt="Infosys Principles of Generative AI Certificate" class="cert-img" loading="lazy">
@@ -655,7 +564,7 @@
             </div>
           </div>
 
-          <!-- 8. Infosys Artificial Intelligence Primer -->
+          <!-- 5. Infosys Artificial Intelligence Primer -->
           <div class="cert-card" data-category="ai" data-img="assets/images/certificates/infosys_ai_primer.png" data-title="Artificial Intelligence Primer Certification" data-issuer="Infosys Springboard" data-date="June 30, 2025" data-verify="https://verify.onwingspan.com">
             <div class="cert-preview-frame" data-action="view-cert">
               <img src="assets/images/certificates/infosys_ai_primer.png" alt="Infosys Artificial Intelligence Primer Certificate" class="cert-img" loading="lazy">
@@ -688,7 +597,7 @@
             </div>
           </div>
 
-          <!-- 9. Cognitive Class / IBM Python 101 -->
+          <!-- 6. Cognitive Class / IBM Python 101 -->
           <div class="cert-card" data-category="ai" data-img="assets/images/certificates/python_certificate_1.png" data-title="Python 101 for Data Science" data-issuer="Cognitive Class (IBM Skills Network)" data-date="October 4, 2022" data-verify="https://courses.cognitiveclass.ai/certificates/340e6fb33d6a48118d3eab54e735e156">
             <div class="cert-preview-frame" data-action="view-cert">
               <img src="assets/images/certificates/python_certificate_1.png" alt="Python 101 for Data Science Certificate" class="cert-img" loading="lazy">
@@ -721,10 +630,11 @@
             </div>
           </div>
 
-          <!-- 10. Cisco Introduction to Cybersecurity -->
-          <div class="cert-card" data-category="security" data-img="assets/images/certificates/cisco_intro_cybersecurity.png" data-title="Introduction to Cybersecurity" data-issuer="Cisco Networking Academy & LNCT Group" data-date="22 Jun 2025" data-verify="#">
+          <!-- ================= Web Development ================= -->
+          <!-- 7. IBM Web Development Fundamentals -->
+          <div class="cert-card" data-category="web" data-img="assets/images/certificates/ibm_web_development.png" data-title="IBM SkillsBuild — Web Development Fundamentals" data-issuer="IBM SkillsBuild" data-date="08/25/2025" data-verify="https://www.credly.com/badges/ce37d226-ae14-49b3-96d9-5df49e26f661">
             <div class="cert-preview-frame" data-action="view-cert">
-              <img src="assets/images/certificates/cisco_intro_cybersecurity.png" alt="Cisco Introduction to Cybersecurity Certificate" class="cert-img" loading="lazy">
+              <img src="assets/images/certificates/ibm_web_development.png" alt="IBM Web Development Fundamentals Certificate" class="cert-img" loading="lazy">
               <div class="cert-preview-overlay">
                 <span class="cert-zoom-pill">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
@@ -734,24 +644,27 @@
             </div>
             <div class="cert-body">
               <div class="cert-header-meta">
-                <span class="cert-issuer-badge cisco">Cisco Academy</span>
-                <span class="cert-date">Jun 2025</span>
+                <span class="cert-issuer-badge ibm">IBM SkillsBuild</span>
+                <span class="cert-date">Aug 2025</span>
               </div>
-              <h3 class="cert-name">Introduction to Cybersecurity</h3>
+              <h3 class="cert-name">Web Development Fundamentals</h3>
               <p class="cert-description">
-                Cyber threat modeling, phishing and malware vectors, defense-in-depth strategies, data confidentiality safeguards, and security compliance.
+                Hands-on validation in modern frontend development, semantic HTML5, CSS layout mechanics, responsive design, and JavaScript DOM interaction.
               </p>
               <div class="cert-card-footer">
                 <button type="button" class="cert-view-btn" data-action="view-cert">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                   <span>Inspect</span>
                 </button>
-                <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-muted);">LNCT Academy</span>
+                <a href="https://www.credly.com/badges/ce37d226-ae14-49b3-96d9-5df49e26f661" target="_blank" rel="noopener" class="cert-verify-link">
+                  <span>Credly Badge</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- 11. Infosys Introduction to Agile Methodology -->
+          <!-- 8. Infosys Introduction to Agile Methodology -->
           <div class="cert-card" data-category="web" data-img="assets/images/certificates/infosys_agile_methodology.png" data-title="Course Completion: Introduction to Agile Methodology" data-issuer="Infosys Springboard" data-date="August 14, 2025" data-verify="https://verify.onwingspan.com">
             <div class="cert-preview-frame" data-action="view-cert">
               <img src="assets/images/certificates/infosys_agile_methodology.png" alt="Infosys Agile Methodology Certificate" class="cert-img" loading="lazy">
@@ -784,7 +697,7 @@
             </div>
           </div>
 
-          <!-- 12. GDSC Google Drive Clone -->
+          <!-- 9. GDSC Google Drive Clone -->
           <div class="cert-card" data-category="web" data-img="assets/images/certificates/google_drive_clone_cert.png" data-title="Google Drive Clone using HTML & Material CSS" data-issuer="Developer Student Clubs (GDSC KIIT)" data-date="2024" data-verify="https://cert.devtown.in.tech/verify/Z1LDSE4">
             <div class="cert-preview-frame" data-action="view-cert">
               <img src="assets/images/certificates/google_drive_clone_cert.png" alt="Google Drive Clone Certificate" class="cert-img" loading="lazy">
@@ -813,6 +726,97 @@
                   <span>Verify</span>
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= Cybersecurity & Networks ================= -->
+          <!-- 10. Cisco Networking Essentials -->
+          <div class="cert-card" data-category="security" data-img="assets/images/certificates/cisco_network_technician.png" data-title="Cisco Networking Academy — Networking Essentials" data-issuer="Cisco Networking Academy & LNCT Group" data-date="14 Dec 2024" data-verify="#">
+            <div class="cert-preview-frame" data-action="view-cert">
+              <img src="assets/images/certificates/cisco_network_technician.png" alt="Cisco Networking Essentials Certificate" class="cert-img" loading="lazy">
+              <div class="cert-preview-overlay">
+                <span class="cert-zoom-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  <span>Click to Enlarge</span>
+                </span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-header-meta">
+                <span class="cert-issuer-badge cisco">Cisco Academy</span>
+                <span class="cert-date">Dec 2024</span>
+              </div>
+              <h3 class="cert-name">Networking Essentials</h3>
+              <p class="cert-description">
+                Practical mastery of network communications, IPv4/IPv6 address architectures, subnet calculations, switch and router operation, and diagnostics.
+              </p>
+              <div class="cert-card-footer">
+                <button type="button" class="cert-view-btn" data-action="view-cert">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <span>Inspect</span>
+                </button>
+                <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-muted);">LNCT Academy</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11. Cisco CyberOps Associate -->
+          <div class="cert-card" data-category="security" data-img="assets/images/certificates/cisco_cyberops_associate.png" data-title="Cisco Networking Academy — CyberOps Associate" data-issuer="Cisco Networking Academy & LNCT Group" data-date="24 Feb 2025" data-verify="#">
+            <div class="cert-preview-frame" data-action="view-cert">
+              <img src="assets/images/certificates/cisco_cyberops_associate.png" alt="Cisco CyberOps Associate Certificate" class="cert-img" loading="lazy">
+              <div class="cert-preview-overlay">
+                <span class="cert-zoom-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  <span>Click to Enlarge</span>
+                </span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-header-meta">
+                <span class="cert-issuer-badge cisco">Cisco Academy</span>
+                <span class="cert-date">Feb 2025</span>
+              </div>
+              <h3 class="cert-name">CyberOps Associate</h3>
+              <p class="cert-description">
+                Security Operations Center (SOC) procedures, real-time threat monitoring, endpoint incident handling, malware payload detection, and defense telemetry.
+              </p>
+              <div class="cert-card-footer">
+                <button type="button" class="cert-view-btn" data-action="view-cert">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <span>Inspect</span>
+                </button>
+                <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-muted);">LNCT Academy</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12. Cisco Introduction to Cybersecurity -->
+          <div class="cert-card" data-category="security" data-img="assets/images/certificates/cisco_intro_cybersecurity.png" data-title="Introduction to Cybersecurity" data-issuer="Cisco Networking Academy & LNCT Group" data-date="22 Jun 2025" data-verify="#">
+            <div class="cert-preview-frame" data-action="view-cert">
+              <img src="assets/images/certificates/cisco_intro_cybersecurity.png" alt="Cisco Introduction to Cybersecurity Certificate" class="cert-img" loading="lazy">
+              <div class="cert-preview-overlay">
+                <span class="cert-zoom-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  <span>Click to Enlarge</span>
+                </span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-header-meta">
+                <span class="cert-issuer-badge cisco">Cisco Academy</span>
+                <span class="cert-date">Jun 2025</span>
+              </div>
+              <h3 class="cert-name">Introduction to Cybersecurity</h3>
+              <p class="cert-description">
+                Cyber threat modeling, phishing and malware vectors, defense-in-depth strategies, data confidentiality safeguards, and security compliance.
+              </p>
+              <div class="cert-card-footer">
+                <button type="button" class="cert-view-btn" data-action="view-cert">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <span>Inspect</span>
+                </button>
+                <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-muted);">LNCT Academy</span>
               </div>
             </div>
           </div>
