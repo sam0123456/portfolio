@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <span class="term-cmd">certs</span>       - Cisco Networking Essentials & IBM Web Development
   <span class="term-cmd">contact</span>     - Direct email, phone, LinkedIn & GitHub links
   <span class="term-cmd">hire</span>        - Why hire Saurabh for Full Stack / SDE roles
+  <span class="term-cmd">resume</span>     - Official downloadable Resume PDF (Saurabh Ranjan)
   <span class="term-cmd">whoami</span>      - Displays active session identity
   <span class="term-cmd">clear</span>       - Clears terminal history
 `,
@@ -78,6 +79,11 @@ MCA student with hands-on experience in MERN Stack development. Proficient in HT
     hire: `
 <span class="term-success">✓ Why Hire Saurabh Ranjan:</span>
 Solid practical experience shipping full-stack MERN apps (ShiftPe, Hostel Complaint System) with complex features like geospatial querying, WebSockets live chat, and RBAC authentication, backed by strong C++ & OOP foundations.
+`,
+    resume: `
+<span class="term-success">📄 Official Resume — Saurabh Ranjan</span>
+• Download File: <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" download="Saurabh_Ranjan_Resume.pdf" class="term-accent" style="text-decoration: underline; font-weight: bold;">Saurabh_Ranjan_Resume.pdf</a>
+• Status: Ready to download or view in a new tab.
 `,
     whoami: `
 <span class="term-cmd">guest@saurabh-portfolio:~$</span> visitor exploring Saurabh Ranjan's portfolio
