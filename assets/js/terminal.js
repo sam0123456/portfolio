@@ -86,7 +86,7 @@ Solid practical experience shipping full-stack MERN apps (ShiftPe, Hostel Compla
 `,
     resume: `
 <span class="term-success">📄 Official Resume — Saurabh Ranjan</span>
-• Download File: <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" download="Saurabh_Ranjan_Resume.pdf" class="term-accent" style="text-decoration: underline; font-weight: bold;">Saurabh_Ranjan_Resume.pdf</a>
+• Download File: <a href="assets/resume.pdf?v=2" target="_blank" rel="noopener noreferrer" download="Saurabh_Ranjan_Resume.pdf" class="term-accent" style="text-decoration: underline; font-weight: bold;">Saurabh_Ranjan_Resume.pdf</a>
 • Status: Ready to download or view in a new tab.
 `,
     whoami: `
