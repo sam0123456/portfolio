@@ -49,7 +49,11 @@ MCA student with hands-on experience in MERN Stack development. Proficient in HT
      • Live: sam0123456.github.io/crescent-national-academy/
   4. <span class="term-cmd">Resonance Public School</span> - Educational Web Platform
      • Live: sam0123456.github.io/resonance-school/
-  5. <span class="term-cmd">AlgoForge (C++)</span> - Core DSA & Competitive Problem Solving
+  5. <span class="term-cmd">Quiz Application</span> - Interactive Timed Quiz Platform
+     • Multi-category trivia engine with 15s timer, instant feedback, and animations.
+     • Live: sam0123456.github.io/Quiz-website/
+     • GitHub: github.com/sam0123456/Quiz-website
+  6. <span class="term-cmd">AlgoForge (C++)</span> - Core DSA & Competitive Problem Solving
 `,
     education: `
 <span class="term-success">❯ Academic Qualifications:</span>

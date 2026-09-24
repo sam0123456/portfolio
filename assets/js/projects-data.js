@@ -114,6 +114,25 @@ const portfolioProjects = [
     liveUrl: "https://sam0123456.github.io/resonance-school/",
     accentColor: "#3b82f6",
     icon: "globe"
+  },
+  {
+    id: "quiz-website",
+    title: "Quiz Application — Interactive Web Platform",
+    category: "frontend",
+    tagline: "Customizable multi-category timed quiz web app with dynamic score engine and celebration animations",
+    description: "An interactive quiz web application designed to test and sharpen knowledge across multiple categories (Programming, Geography, Mathematics, and Entertainment). Features dynamic session configuration, 15-second countdown timer mechanics, instant answer validation, and celebratory completion animations.",
+    architecture: "Lightweight modular vanilla JavaScript architecture utilizing clean state management for timer countdowns, answer randomization, dynamic DOM rendering, and celebration animations.",
+    keyMetrics: [
+      "Customizable quiz parameters across multiple categories (Programming, Geography, Math, Entertainment)",
+      "Dynamic 15-second per-question countdown timer with auto-progression",
+      "Instant visual feedback for correct/incorrect answers with real-time score calculation",
+      "Celebratory completion screen with results breakdown and instant replay functionality"
+    ],
+    tags: ["HTML5", "CSS3", "JavaScript", "DOM Manipulation", "Timer Engine", "UI/UX"],
+    githubUrl: "https://github.com/sam0123456/Quiz-website",
+    liveUrl: "https://sam0123456.github.io/Quiz-website/",
+    accentColor: "#ec4899",
+    icon: "award"
   }
 ];
 
